@@ -1,0 +1,38 @@
+import { PublicKey } from '@solana/web3.js';
+import { RichTextDocument } from '@lib/types/RichTextDocument';
+import { RealmAboutSection } from './RealmAboutSection';
+import { RealmCategory } from './RealmCategory';
+import { RealmDocumentation } from './RealmDocumentation';
+import { RealmFaqItem } from './RealmFaqItem';
+import { RealmGalleryItem } from './RealmGalleryItem';
+import { RealmResource } from './RealmResource';
+import { RealmRoadmap } from './RealmRoadmap';
+import { RealmTeamMember } from './RealmTeamMember';
+import { RealmTokenDetails } from './RealmTokenDetails';
+export declare class Realm {
+    about: RealmAboutSection[];
+    bannerImageUrl?: string;
+    category: RealmCategory;
+    discordUrl?: string;
+    displayName: string;
+    documentation?: RealmDocumentation;
+    faq: RealmFaqItem[];
+    gallery: RealmGalleryItem[];
+    githubUrl?: string;
+    heading?: RichTextDocument;
+    iconUrl?: string;
+    instagramUrl?: string;
+    linkedInUrl?: string;
+    name: string;
+    programPublicKey?: PublicKey;
+    publicKey: PublicKey;
+    resources: RealmResource[];
+    roadmap: RealmRoadmap;
+    shortDescription?: string;
+    symbol?: string;
+    team: RealmTeamMember[];
+    token?: RealmTokenDetails;
+    twitterHandle?: string;
+    urlId: string;
+    websiteUrl?: string;
+}

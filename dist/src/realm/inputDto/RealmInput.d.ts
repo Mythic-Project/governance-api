@@ -1,0 +1,33 @@
+import { RealmCategory } from '../dto/RealmCategory';
+import { RichTextDocument } from '@lib/types/RichTextDocument';
+import { RealmAboutSectionInput } from './RealmAboutSectionInput';
+import { RealmDocumentationInput } from './RealmDocumentationInput';
+import { RealmFaqItemInput } from './RealmFaqItemInput';
+import { RealmGalleryItemInput } from './RealmGalleryItemInput';
+import { RealmResourceInput } from './RealmResourceInput';
+import { RealmRoadmapInput } from './RealmRoadmapInput';
+import { RealmTeamMemberInput } from './RealmTeamMemberInput';
+import { RealmTokenDetailsInput } from './RealmTokenDetailsInput';
+export declare class RealmInput {
+    about: RealmAboutSectionInput[];
+    bannerImageUrl?: string;
+    category: RealmCategory;
+    discordUrl?: string;
+    displayName: string;
+    documentation?: RealmDocumentationInput;
+    faq: RealmFaqItemInput[];
+    gallery: RealmGalleryItemInput[];
+    githubUrl?: string;
+    heading?: RichTextDocument;
+    iconUrl?: string;
+    instagramUrl?: string;
+    linkedInUrl?: string;
+    resources: RealmResourceInput[];
+    roadmap: RealmRoadmapInput;
+    shortDescription?: string;
+    symbol?: string;
+    team: RealmTeamMemberInput[];
+    token?: RealmTokenDetailsInput;
+    twitterHandle?: string;
+    websiteUrl?: string;
+}
