@@ -90,7 +90,7 @@ export class HeliusService {
   endpoint(environment: Environment) {
     switch (environment) {
       case 'devnet':
-        return `https://rpc-devnet.helius.xyz/?api-key=${this.configService.get('helius.apiKey')}`;
+        return `https://devnet.helius-rpc.com/?api-key=${this.configService.get('helius.apiKey')}`;
       case 'mainnet':
         return `https://rpc.helius.xyz/?api-key=${this.configService.get('helius.apiKey')}`;
     }
