@@ -2,7 +2,7 @@ import type { PublicKey } from "@solana/web3.js";
 
 /**
  * Return a list of sol accounts. The data is fetched directly from the chain
- * through an RPC.
+ * through RPC.
  */
 export function getSolAccounts(owners: PublicKey[], commitment?: string) {
   return fetch(process.env.RPC_ENDPOINT as string, {
